@@ -1,4 +1,4 @@
-package com.example.workshop.mongodb;
+package com.workshop.mongodb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
