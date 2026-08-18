@@ -12,8 +12,11 @@ import com.workshop.mongodb.repository.UserRepository;
 @Configuration
 public class Instantiation implements CommandLineRunner {
 
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+
+    Instantiation(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @Override
     public void run(String... args) throws Exception {
